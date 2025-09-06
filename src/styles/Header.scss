@@ -1,0 +1,30 @@
+.Header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+
+    @media(max-width: 600px) {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+        height: 90px;
+        align-items: center;
+        align-content: center;
+    }
+
+    &_logo {
+        font-weight: 800;
+        font-size: 28px;
+
+        @media(max-width: 600px) {
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    &_phone {
+        font-size: 22px;
+        font-weight: 500;
+    }
+}

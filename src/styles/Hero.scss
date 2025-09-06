@@ -1,0 +1,38 @@
+.Hero {
+    // min-height: calc(100vh - 60px);
+    padding: 120px 0px;
+    // background: #f002;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &_content {
+        max-width: 780px;
+        width: 100%;
+    }
+
+    &_description {
+        font-size: 18px;
+        padding: 8px 0px;
+    }
+
+    &_header {
+        font-size: 48px;
+        font-weight: 800;
+
+        @media(max-width: 600px) {
+            font-size: 32px;
+        }
+
+        @media(max-width: 400px) {
+            font-size: 28px;
+        }
+    }
+
+    &_cta {
+        font-size: 32px;
+        margin-top: 32px;
+        font-weight: 600;
+    }
+}
